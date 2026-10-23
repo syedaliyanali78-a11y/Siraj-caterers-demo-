@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siraj Caterers | Elegance In Every Event - Karachi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cinzel Decorative & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;600;700;900&family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            900: '#2A050B',
+                            800: '#3B0910',
+                            700: '#580C1E',
+                            600: '#73132B',
+                        },
+                        gold: {
+                            300: '#F5E08F',
+                            400: '#E5C158',
+                            500: '#D4AF37',
+                            600: '#B38F23',
+                            700: '#8A6A12',
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        cinzelDeco: ['Cinzel Decorative', 'cursive'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Metallic Gold Gradients and Animations */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #F5E08F 0%, #D4AF37 50%, #B38F23 100%);
+        }
+
+        .bg-gold-gradient-hover:hover {
+            background: linear-gradient(135deg, #FFF0B3 0%, #E5C158 50%, #D4AF37 100%);
+        }
+
+        .border-gold-gradient {
+            border-image: linear-gradient(135deg, #F5E08F, #D4AF37, #8A6A12) 1;
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+
+        .gold-glow-hover:hover {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .royal-pattern {
+            background-color: #2A050B;
+            background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #2A050B 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+            background-opacity: 0.05;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2A050B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #580C1E;
+            border-radius: 4px;
+            border: 1px solid #D4AF37;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-maroon-900 text-gray-100 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-maroon-900">
+
+    <!-- 1. TOP INFORMATION BAR -->
+    <div class="bg-maroon-800 border-b border-gold-500/20 text-xs sm:text-sm text-gold-300 py-2 px-4 transition-all">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i>
+                    Gulshan-e-Iqbal, Block 4, Karachi
+                </span>
+                <span class="hidden md:inline text-gold-500/40">|</span>
+                <span class="hidden md:flex items-center gap-1.5">
+                    <i class="fa-solid fa-award text-gold-500"></i>
+                    100% Recommended Caterer
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:03032412125" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-gold-500"></i> 0303 2412125
+                </a>
+                <span class="text-gold-500/40">|</span>
+                <a href="tel:03148000207" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-gold-500"></i> 0314 8000207
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 bg-maroon-900/95 backdrop-blur-md border-b border-gold-500/30 shadow-2xl transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Branding -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-300 via-gold-500 to-gold-700 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                        <div class="w-full h-full bg-maroon-900 rounded-full flex items-center justify-center border border-gold-400">
+                            <span class="font-cinzelDeco font-bold text-2xl text-gold-gradient">S</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-cinzel font-bold text-xl sm:text-2xl tracking-widest text-gold-gradient block leading-tight">SIRAJ CATERERS</span>
+                        <span class="text-[9px] sm:text-[10px] tracking-widest text-gray-300 font-cinzel block uppercase">Elegance In Every Event</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 font-cinzel text-sm font-semibold tracking-wider">
+                    <a href="#about" class="text-gray-200 hover:text-gold-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-500 hover:after:w-full after:transition-all">About Us</a>
+                    <a href="#services" class="text-gray-200 hover:text-gold-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-500 hover:after:w-full after:transition-all">Services</a>
+                    <a href="#menu" class="text-gray-200 hover:text-gold-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-500 hover:after:w-full after:transition-all">Signature Menu</a>
+                    <a href="#calculator" class="text-gray-200 hover:text-gold-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-500 hover:after:w-full after:transition-all">Budget Calculator</a>
+                    <a href="#gallery" class="text-gray-200 hover:text-gold-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gold-500 hover:after:w-full after:transition-all">Gallery</a>
+                </nav>
+
+                <!-- Book CTA & Mobile Menu Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="#calculator" class="hidden sm:inline-flex items-center gap-2 bg-gold-gradient bg-gold-gradient-hover text-maroon-900 font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm tracking-wider uppercase font-cinzel shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 gold-glow">
+                        <i class="fa-solid fa-calendar-check"></i> Book Event
+                    </a>
+                    
+                    <button id="mobile-menu-btn" class="md:hidden text-gold-400 text-2xl focus:outline-none p-2" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-maroon-900 border-b border-gold-500/30 px-4 pt-2 pb-6 space-y-3 font-cinzel text-center">
+            <a href="#about" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-maroon-700">About Us</a>
+            <a href="#services" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-maroon-700">Services</a>
+            <a href="#menu" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-maroon-700">Signature Menu</a>
+            <a href="#calculator" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-maroon-700">Budget Calculator</a>
+            <a href="#gallery" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-maroon-700">Gallery</a>
+            <a href="#calculator" class="inline-block mt-2 bg-gold-gradient text-maroon-900 font-bold px-6 py-2.5 rounded-full text-xs tracking-wider uppercase">
+                Book Event
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-gold-500/20">
+        <!-- Background Banner Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1920&q=80" alt="Royal Wedding Setup" class="w-full h-full object-cover object-center filter brightness-[0.25] contrast-125">
+            <div class="absolute inset-0 bg-gradient-to-t from-maroon-900 via-maroon-900/60 to-transparent"></div>
+            <div class="absolute inset-0 royal-pattern opacity-30"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+            <!-- Ornamental Emblem -->
+            <div class="inline-flex items-center justify-center gap-3 mb-4">
+                <span class="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold-500"></span>
+                <span class="text-gold-400 font-cinzel text-xs sm:text-sm tracking-[0.3em] uppercase">Karachi's Premier Luxury Caterers</span>
+                <span class="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold-500"></span>
+            </div>
+
+            <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+                Crafting <span class="text-gold-gradient font-cinzelDeco">Royal Culinary</span> Moments
+            </h1>
+
+            <p class="text-gray-300 text-base sm:text-xl font-light max-w-3xl mx-auto mb-10 leading-relaxed">
+                From majestic Barat receptions and intimate Valimas to lavish corporate galas, Siraj Caterers brings authentic Karachii flavors, royal setups, and flawless hospitality to your celebrations.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="#calculator" class="w-full sm:w-auto bg-gold-gradient bg-gold-gradient-hover text-maroon-900 font-bold px-8 py-4 rounded-full text-sm tracking-widest uppercase font-cinzel shadow-xl transition-all duration-300 transform hover:-translate-y-1 gold-glow flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> Estimate Event Cost
+                </a>
+                <a href="https://wa.me/923148000207?text=Hi%20Siraj%20Caterers,%20I%20would%20like%20to%20inquire%20about%20catering%20services%20for%20an%20event." target="_blank" class="w-full sm:w-auto border-2 border-gold-500 text-gold-300 hover:bg-gold-500/10 font-semibold px-8 py-4 rounded-full text-sm tracking-widest uppercase font-cinzel transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i> Chat On WhatsApp
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-maroon-800/80 border border-gold-500/20 backdrop-blur-md">
+                <div class="text-center p-2">
+                    <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-gradient">15+</div>
+                    <div class="text-xs text-gray-300 uppercase tracking-wider mt-1">Years Experience</div>
+                </div>
+                <div class="text-center p-2 border-l border-gold-500/10">
+                    <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-gradient">2,500+</div>
+                    <div class="text-xs text-gray-300 uppercase tracking-wider mt-1">Events Catering</div>
+                </div>
+                <div class="text-center p-2 border-l border-gold-500/10">
+                    <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-gradient">100%</div>
+                    <div class="text-xs text-gray-300 uppercase tracking-wider mt-1">Recommended</div>
+                </div>
+                <div class="text-center p-2 border-l border-gold-500/10">
+                    <div class="font-cinzel text-2xl sm:text-3xl font-bold text-gold-gradient">50k+</div>
+                    <div class="text-xs text-gray-300 uppercase tracking-wider mt-1">Guests Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-maroon-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden border-2 border-gold-500/40 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1000&q=80" alt="Siraj Caterers Setup" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-maroon-900/80 via-transparent to-transparent"></div>
+                    </div>
+                    <!-- Decorative Frame Element -->
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 border-b-2 border-r-2 border-gold-500 rounded-br-2xl hidden sm:block pointer-events-none"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2">
+                        <i class="fa-solid fa-crown text-gold-500"></i>
+                        <span class="text-gold-400 font-cinzel text-sm tracking-widest uppercase">The Essence Of Hospitality</span>
+                    </div>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Karachi’s Culinary Legacy Since Over A Decade</h2>
+                    <p class="text-gray-300 leading-relaxed font-light">
+                        Based in the heart of Gulshan-e-Iqbal Block 4, <strong class="text-gold-300">Siraj Caterers</strong> is synonymous with rich traditional tastes, pristine hygiene, and royal setups. We specialize in authentic Mughlai dishes, live barbecue stations, rich biryanis, and traditional desserts prepared by master chefs.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-gold-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-cinzel font-semibold text-white">Pure Ingredients</h4>
+                                <p class="text-xs text-gray-400">100% Halal fresh meat & premium spices.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-gold-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-cinzel font-semibold text-white">Master Chefs</h4>
+                                <p class="text-xs text-gray-400">Decades of authentic culinary mastery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. EXCLUSIVE SERVICES SECTION -->
+    <section id="services" class="py-20 bg-maroon-800/50 relative border-t border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase block mb-2">Bespoke Catering Solutions</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Our Exclusive Services</h2>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group bg-maroon-900 border border-gold-500/20 hover:border-gold-500 rounded-2xl p-8 transition-all duration-300 transform hover:-translate-y-2 gold-glow-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-maroon-800 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-gradient group-hover:text-maroon-900 transition-colors">
+                            <i class="fa-solid fa-ring"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Weddings, Barat & Valima</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Grand wedding feasts with grand table decor, VIP live stations, silver-plated dishware, and traditional regal hospitality for your memorable moments.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-2 border-t border-maroon-800 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Customized Menu Planning</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Uniformed Waitstaff</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-maroon-900 border border-gold-500/20 hover:border-gold-500 rounded-2xl p-8 transition-all duration-300 transform hover:-translate-y-2 gold-glow-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-maroon-800 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-gradient group-hover:text-maroon-900 transition-colors">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Live BBQ & Outdoor Setup</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Interactive live grilling counters featuring seekh kebabs, reshmi handi, chicken tikka, and hot tandoori naan prepared fresh right before your guests.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-2 border-t border-maroon-800 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Live Chefs & Pitmasters</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Charcoal Outdoor Grilling</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-maroon-900 border border-gold-500/20 hover:border-gold-500 rounded-2xl p-8 transition-all duration-300 transform hover:-translate-y-2 gold-glow-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-maroon-800 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-gradient group-hover:text-maroon-900 transition-colors">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Corporate Galas & Parties</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Punctual, hygienic, and highly structured catering solutions for corporate annual dinners, executive lunches, product launches, and private house parties.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-2 border-t border-maroon-800 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Buffet Line Management</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-star text-gold-500 text-[10px]"></i> Flexible Portions & Packaging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FILTERABLE SIGNATURE MENU SHOWCASE -->
+    <section id="menu" class="py-20 bg-maroon-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase block mb-2">A Feast For Royalty</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Signature Dishes Showcase</h2>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="menu-filters">
+                <button data-filter="all" class="filter-btn active bg-gold-gradient text-maroon-900 font-bold px-5 py-2 rounded-full text-xs sm:text-sm font-cinzel tracking-wider transition-all">All Dishes</button>
+                <button data-filter="rice" class="filter-btn bg-maroon-800 text-gold-300 border border-gold-500/30 hover:border-gold-500 px-5 py-2 rounded-full text-xs sm:text-sm font-cinzel tracking-wider transition-all">Rice & Biryani</button>
+                <button data-filter="bbq" class="filter-btn bg-maroon-800 text-gold-300 border border-gold-500/30 hover:border-gold-500 px-5 py-2 rounded-full text-xs sm:text-sm font-cinzel tracking-wider transition-all">Live BBQ</button>
+                <button data-filter="karahi" class="filter-btn bg-maroon-800 text-gold-300 border border-gold-500/30 hover:border-gold-500 px-5 py-2 rounded-full text-xs sm:text-sm font-cinzel tracking-wider transition-all">Karahi & Gravy</button>
+                <button data-filter="sweets" class="filter-btn bg-maroon-800 text-gold-300 border border-gold-500/30 hover:border-gold-500 px-5 py-2 rounded-full text-xs sm:text-sm font-cinzel tracking-wider transition-all">Royal Sweets</button>
+            </div>
+
+            <!-- Menu Item Cards Container -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="menu-grid">
+                
+                <!-- Item 1 -->
+                <div class="menu-card category-rice bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Special Mutton Biryani" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Royal Specialty</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Special Beef / Mutton Biryani</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Fragrant basmati rice cooked with succulent meat marinades, rich saffron aroma, and authentic Zafrani spices.
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-utensils mr-1"></i> Main Course</span>
+                            <span class="text-gray-400 font-sans">Per Head Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card category-bbq bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Chicken Reshmi Boti" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Live Grill</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Chicken Reshmi & Malai Boti</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Melt-in-your-mouth boneless chicken marinated in fresh cream, green chillies, and grilled live over hot coal embers.
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-fire mr-1"></i> Live BBQ</span>
+                            <span class="text-gray-400 font-sans">Served with Mint Raita</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card category-karahi bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80" alt="Mutton White Karahi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Popular</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Desi Ghee Mutton Karahi</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Traditional wok-cooked tender mutton simmered in pure desi ghee, organic ginger juliennes, and freshly cracked black pepper.
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-bowl-food mr-1"></i> Gravy & Wok</span>
+                            <span class="text-gray-400 font-sans">Fresh Naan Included</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card category-sweets bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Shahi Gulab Jamun" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Sweet Finish</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Shahi Kheer & Hot Gulab Jamun</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Creamy slow-cooked Zafrani Kheer served in earthen clay pots alongside warm, syrup-filled Gulab Jamuns topped with pistachios.
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-cookie-bite mr-1"></i> Royal Dessert</span>
+                            <span class="text-gray-400 font-sans">Freshly Prepared</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card category-bbq bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80" alt="Beef Seekh Kebab" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Sizzling</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Karachi Flame Seekh Kebab</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Minced beef infused with aromatic herbs, onions, and secret spice mixes, skewer-cooked to juicy perfection over coals.
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-fire mr-1"></i> Live BBQ</span>
+                            <span class="text-gray-400 font-sans">Served Fresh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card category-rice category-karahi bg-maroon-800/80 rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-500 transition-all duration-300 shadow-xl group">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80" alt="Degi Chicken Pulao" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-maroon-900/90 text-gold-400 text-xs font-cinzel font-bold px-3 py-1 rounded-full border border-gold-500/40">Traditional</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Authentic Degi Yakhni Pulao</h3>
+                        <p class="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Light yet flavorful Yakhni rice cooked with delicate chicken cuts and whole spices in heavy copper cauldrons (Degs).
+                        </p>
+                        <div class="flex items-center justify-between text-gold-400 font-cinzel text-xs font-semibold">
+                            <span><i class="fa-solid fa-utensils mr-1"></i> Rice Delicacy</span>
+                            <span class="text-gray-400 font-sans">Deg Serving</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE EVENT BUDGET CALCULATOR -->
+    <section id="calculator" class="py-20 bg-maroon-800/40 relative border-t border-b border-gold-500/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase block mb-2">Instant Pricing Transparency</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Event Budget Estimator</h2>
+                <p class="text-gray-300 text-sm mt-3">Configure your guest count and preferred package to compute an estimated investment in PKR.</p>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="bg-maroon-900 rounded-3xl border-2 border-gold-500/40 p-6 sm:p-10 shadow-2xl gold-glow relative overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    
+                    <!-- Form Controls -->
+                    <div class="space-y-6">
+                        <!-- Guest Count Slider & Input -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="font-cinzel text-sm font-semibold text-gold-300">Total Guest Count</label>
+                                <span id="guest-count-display" class="font-bold text-xl text-gold-gradient font-cinzel">250 Guests</span>
+                            </div>
+                            <input type="range" id="guest-slider" min="50" max="2000" step="25" value="250" class="w-full h-2 bg-maroon-700 rounded-lg appearance-none cursor-pointer accent-gold-500">
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                                <span>50 Guests</span>
+                                <span>1,000 Guests</span>
+                                <span>2,000+ Guests</span>
+                            </div>
+                        </div>
+
+                        <!-- Package Type Selection -->
+                        <div>
+                            <label class="block font-cinzel text-sm font-semibold text-gold-300 mb-2">Select Catering Package</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <button type="button" data-package="standard" data-price="1200" class="package-btn text-left p-3 rounded-xl border border-gold-500/30 bg-maroon-800 hover:border-gold-500 transition-all active-package border-gold-500 bg-gold-500/10">
+                                    <div class="font-cinzel font-bold text-xs text-gold-300">Standard</div>
+                                    <div class="text-[11px] text-gray-300 mt-1">PKR 1,200/head</div>
+                                </button>
+                                <button type="button" data-package="royal" data-price="1800" class="package-btn text-left p-3 rounded-xl border border-gold-500/30 bg-maroon-800 hover:border-gold-500 transition-all">
+                                    <div class="font-cinzel font-bold text-xs text-gold-300">Royal Deluxe</div>
+                                    <div class="text-[11px] text-gray-300 mt-1">PKR 1,800/head</div>
+                                </button>
+                                <button type="button" data-package="imperial" data-price="2500" class="package-btn text-left p-3 rounded-xl border border-gold-500/30 bg-maroon-800 hover:border-gold-500 transition-all">
+                                    <div class="font-cinzel font-bold text-xs text-gold-300">Imperial VIP</div>
+                                    <div class="text-[11px] text-gray-300 mt-1">PKR 2,500/head</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Event Type Selection -->
+                        <div>
+                            <label class="block font-cinzel text-sm font-semibold text-gold-300 mb-2">Event Function Type</label>
+                            <select id="event-type" class="w-full bg-maroon-800 border border-gold-500/40 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-gold-500">
+                                <option value="Wedding / Barat">Wedding / Barat Reception</option>
+                                <option value="Valima Function">Valima Ceremony</option>
+                                <option value="Mehndi / Mayun">Mehndi / Mayun Night</option>
+                                <option value="Corporate Dinner">Corporate Gala Dinner</option>
+                                <option value="Private House Party">Private Party / Celebration</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Calculated Total & Action -->
+                    <div class="bg-maroon-800/90 p-8 rounded-2xl border border-gold-500/30 text-center flex flex-col justify-between h-full space-y-6">
+                        <div>
+                            <span class="text-xs font-cinzel tracking-widest text-gold-400 uppercase">Estimated Total Investment</span>
+                            <div class="text-4xl sm:text-5xl font-cinzel font-bold text-gold-gradient mt-2 mb-1" id="total-cost-display">
+                                PKR 300,000
+                            </div>
+                            <span class="text-xs text-gray-400 block" id="per-head-breakdown">PKR 1,200 per guest for 250 guests</span>
+                        </div>
+
+                        <div class="space-y-3 text-left bg-maroon-900/60 p-4 rounded-xl text-xs text-gray-300">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-gold-500"></i>
+                                <span id="summary-package">Package: Standard Feast</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-gold-500"></i>
+                                <span>Includes Crockery, Cutlery & Buffet Setup</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-gold-500"></i>
+                                <span>Free Delivery within Gulshan & Nearby Areas</span>
+                            </div>
+                        </div>
+
+                        <button id="send-whatsapp-btn" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-xl text-sm font-cinzel tracking-wider uppercase transition-all shadow-lg flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Book Quote On WhatsApp
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GALLERY & TESTIMONIALS -->
+    <section id="gallery" class="py-20 bg-maroon-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase block mb-2">Visual Elegance</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Event Gallery & Reviews</h2>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="relative h-64 rounded-2xl overflow-hidden border border-gold-500/20 group cursor-pointer gallery-item" data-img="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80" alt="Wedding Setup" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-maroon-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-gold-400 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden border border-gold-500/20 group cursor-pointer gallery-item" data-img="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Buffet Presentation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-maroon-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-gold-400 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden border border-gold-500/20 group cursor-pointer gallery-item" data-img="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Live BBQ Setup" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-maroon-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-gold-400 text-2xl"></i>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-2xl overflow-hidden border border-gold-500/20 group cursor-pointer gallery-item" data-img="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Biryani Preparation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-maroon-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-gold-400 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-maroon-800/60 p-6 rounded-2xl border border-gold-500/20 relative">
+                    <div class="flex text-gold-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic mb-4">"Siraj Caterers managed our Valima event of 600 guests in Gulshan. The Mutton Biryani and Live Reshmi Boti were absolute perfection. All our guests complimented the food standard."</p>
+                    <div class="font-cinzel text-sm font-bold text-white">— Tariq Mahmood</div>
+                    <span class="text-[10px] text-gray-400">Karachi Resident</span>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-maroon-800/60 p-6 rounded-2xl border border-gold-500/20 relative">
+                    <div class="flex text-gold-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic mb-4">"Very professional staff, punctual setup, and top-tier taste. Their live BBQ counters at our corporate dinner made a lasting impression."</p>
+                    <div class="font-cinzel text-sm font-bold text-white">— Syeda Ayesha</div>
+                    <span class="text-[10px] text-gray-400">Event Manager</span>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-maroon-800/60 p-6 rounded-2xl border border-gold-500/20 relative">
+                    <div class="flex text-gold-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 text-xs sm:text-sm italic mb-4">"100% recommended! Authentic Karachi spice blend, clean serving trays, and warm management by Siraj Caterers. Will book again."</p>
+                    <div class="font-cinzel text-sm font-bold text-white">— Bilal Farooqui</div>
+                    <span class="text-[10px] text-gray-400">Barat Host</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. CONTACT & FOOTER SECTION -->
+    <footer id="contact" class="bg-maroon-900 border-t border-gold-500/30 pt-16 pb-8 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Column 1: Brand Info -->
+                <div>
+                    <a href="#" class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-gradient p-0.5">
+                            <div class="w-full h-full bg-maroon-900 rounded-full flex items-center justify-center">
+                                <span class="font-cinzelDeco font-bold text-lg text-gold-gradient">S</span>
+                            </div>
+                        </div>
+                        <span class="font-cinzel font-bold text-xl tracking-widest text-gold-gradient">SIRAJ CATERERS</span>
+                    </a>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                         Karachi's leading catering brand specializing in traditional feasts, live outdoor BBQ, and VIP event management with unmatched culinary perfection.
+                    </p>
+                    <div class="flex gap-4 text-gold-400">
+                        <a href="#" class="w-8 h-8 rounded-full bg-maroon-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-900 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-maroon-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-900 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/923148000207" class="w-8 h-8 rounded-full bg-maroon-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-900 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links & Contact Details -->
+                <div class="space-y-3">
+                    <h4 class="font-cinzel font-bold text-white text-base tracking-wider text-gold-300">Contact & Location</h4>
+                    <div class="text-xs text-gray-300 space-y-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-gold-500 mt-1"></i>
+                            <span>Gulshan-e-Iqbal, Block 4, Karachi, Sindh, Pakistan</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-gold-500"></i>
+                            <span>0303 2412125 / 0314 8000207</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-gold-500"></i>
+                            <span>sirajcaterersofficial@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Embedded Location Map -->
+                <div>
+                    <h4 class="font-cinzel font-bold text-white text-base tracking-wider text-gold-300 mb-3">Visit Our Office</h4>
+                    <div class="rounded-xl overflow-hidden border border-gold-500/30 h-44">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14474.316499878197!2d67.0863!3d24.9288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f32a0000001%3A0x0!2sGulshan-e-Iqbal%20Block%204%20Karachi!5e0!3m2!1sen!2spk!4v1680000000000!5m2!1sen!2spk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright Line -->
+            <div class="border-t border-maroon-800 pt-6 text-center text-xs text-gray-300">
+                <p>&copy; 2026 Siraj Caterers Karachi. All Rights Reserved. Crafted with Royal Elegance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923148000207?text=Hi%20Siraj%20Caterers,%20I%20want%20to%20book%20an%20event." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 flex items-center justify-center text-2xl gold-glow" aria-label="WhatsApp Us">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- IMAGE LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button id="close-modal" class="absolute top-6 right-6 text-white text-3xl hover:text-gold-400">&times;</button>
+        <img id="modal-img" src="" alt="Enlarged View" class="max-w-full max-h-[85vh] rounded-xl border-2 border-gold-500">
+    </div>
+
+    <!-- 8. EMBEDDED VANILLA JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. MOBILE MENU TOGGLE ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // --- 2. MENU CATEGORY FILTER ---
+            const filterBtns = document.querySelectorAll('#menu-filters .filter-btn');
+            const menuCards = document.querySelectorAll('.menu-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active state
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-gold-gradient', 'text-maroon-900');
+                        b.classList.add('bg-maroon-800', 'text-gold-300');
+                    });
+                    // Add active state
+                    btn.classList.add('active', 'bg-gold-gradient', 'text-maroon-900');
+                    btn.classList.remove('bg-maroon-800', 'text-gold-300');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    menuCards.forEach(card => {
+                        if (filterValue === 'all' || card.classList.contains(`category-${filterValue}`)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // --- 3. EVENT BUDGET CALCULATOR LOGIC ---
+            const guestSlider = document.getElementById('guest-slider');
+            const guestCountDisplay = document.getElementById('guest-count-display');
+            const packageBtns = document.querySelectorAll('.package-btn');
+            const eventTypeSelect = document.getElementById('event-type');
+            const totalCostDisplay = document.getElementById('total-cost-display');
+            const perHeadBreakdown = document.getElementById('per-head-breakdown');
+            const summaryPackage = document.getElementById('summary-package');
+            const sendWhatsappBtn = document.getElementById('send-whatsapp-btn');
+
+            let currentGuests = 250;
+            let currentPricePerHead = 1200;
+            let currentPackageName = "Standard Feast";
+
+            function updateCalculator() {
+                currentGuests = parseInt(guestSlider.value);
+                const totalCost = currentGuests * currentPricePerHead;
+
+                // Format PKR Currency
+                const formattedCost = new Intl.NumberFormat('en-PK', {
+                    style: 'currency',
+                    currency: 'PKR',
+                    maximumFractionDigits: 0
+                }).format(totalCost).replace('PKR', 'PKR ');
+
+                guestCountDisplay.textContent = `${currentGuests} Guests`;
+                totalCostDisplay.textContent = formattedCost;
+                perHeadBreakdown.textContent = `PKR ${currentPricePerHead.toLocaleString()} per guest for ${currentGuests} guests`;
+                summaryPackage.textContent = `Package: ${currentPackageName}`;
+            }
+
+            // Slider Event
+            if (guestSlider) {
+                guestSlider.addEventListener('input', updateCalculator);
+            }
+
+            // Package Buttons Event
+            packageBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    packageBtns.forEach(b => {
+                        b.classList.remove('border-gold-500', 'bg-gold-500/10');
+                    });
+                    btn.classList.add('border-gold-500', 'bg-gold-500/10');
+
+                    currentPricePerHead = parseInt(btn.getAttribute('data-price'));
+                    const pkgType = btn.getAttribute('data-package');
+                    if (pkgType === 'standard') currentPackageName = "Standard Feast";
+                    if (pkgType === 'royal') currentPackageName = "Royal Deluxe Feast";
+                    if (pkgType === 'imperial') currentPackageName = "Imperial VIP Feast";
+
+                    updateCalculator();
+                });
+            });
+
+            // Send WhatsApp Quote
+            if (sendWhatsappBtn) {
+                sendWhatsappBtn.addEventListener('click', () => {
+                    const eventType = eventTypeSelect.value;
+                    const totalCost = (currentGuests * currentPricePerHead).toLocaleString();
+                    
+                    const message = `*Siraj Caterers - Quote Inquiry*%0A%0A` +
+                        `• *Event Type:* ${eventType}%0A` +
+                        `• *Guest Count:* ${currentGuests} Guests%0A` +
+                        `• *Package Selected:* ${currentPackageName} (PKR ${currentPricePerHead}/head)%0A` +
+                        `• *Estimated Investment:* PKR ${totalCost}%0A%0A` +
+                        `Please confirm menu options and availability for my event.`;
+
+                    window.open(`https://wa.me/923148000207?text=${message}`, '_blank');
+                });
+            }
+
+            // Initialize Calc on Load
+            updateCalculator();
+
+            // --- 4. LIGHTBOX MODAL FOR GALLERY ---
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const modalImg = document.getElementById('modal-img');
+            const closeModal = document.getElementById('close-modal');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const imgSrc = item.getAttribute('data-img');
+                    if (modalImg && lightboxModal) {
+                        modalImg.src = imgSrc;
+                        lightboxModal.classList.remove('hidden');
+                        lightboxModal.classList.add('flex');
+                    }
+                });
+            });
+
+            if (closeModal) {
+                closeModal.addEventListener('click', () => {
+                    lightboxModal.classList.add('hidden');
+                    lightboxModal.classList.remove('flex');
+                });
+            }
+
+            if (lightboxModal) {
+                lightboxModal.addEventListener('click', (e) => {
+                    if (e.target === lightboxModal) {
+                        lightboxModal.classList.add('hidden');
+                        lightboxModal.classList.remove('flex');
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
